@@ -1,6 +1,6 @@
 /* styles.css */
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -8,6 +8,7 @@ background-image: url('http://dl6.glitter-graphics.net/pub/156/156996u4vu4loeqc.
 background-attachment: fixed;
 background-repeat: repeat;
 cursor: url('http://www.rw-designer.com/cursor-extern.php?id=57222'), auto;
+
 }
 
 .container {
@@ -18,18 +19,17 @@ cursor: url('http://www.rw-designer.com/cursor-extern.php?id=57222'), auto;
 
 .header {
   padding: 20px;
+  margin-top: 5%;
   text-align: center;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 32px;
-}
+
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 20px;
+  margin-top: 5%;
 }
 
 .gallery-item {
@@ -38,6 +38,7 @@ cursor: url('http://www.rw-designer.com/cursor-extern.php?id=57222'), auto;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 2px solid white;
+  
 }
 
 .gallery-item img {
@@ -45,6 +46,7 @@ cursor: url('http://www.rw-designer.com/cursor-extern.php?id=57222'), auto;
   height: 100%;
   object-fit: cover; 
   display: block;
+  
 }
 
 .username {
@@ -60,11 +62,19 @@ cursor: url('http://www.rw-designer.com/cursor-extern.php?id=57222'), auto;
 }
 
 .footer {
-  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Adjust the height as needed */
   text-align: center;
   font-size: 14px;
   color: orange;
+  
 }
 
 .footer a {
-  color: orange; }
+  color: orange; 
+
+
+}
